@@ -48,7 +48,7 @@
     <string name="onboard2_desc">Have secure and private consultations with healthcare providers through our app, no matter where you are.</string>
     <string name="onboard3_title">Access and Manage Your Health Records</string>
     <string name="onboard3_desc">Keep track of your medical history and documents all in one place for easy access and sharing.</string>
-    <string name="Get_Started"><![CDATA[Get Started >>]]></string>
+    <string name="Get_Started"><![CDATA[Get Started]]></string>
     <string name="wel_msg">Access trusted online consultations, book appointments, and receive prescriptions—all from the comfort of your home.</string>
     <string name="log_in">LOG IN</string>
     <string name="email">Email</string>
