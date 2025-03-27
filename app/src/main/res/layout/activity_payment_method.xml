@@ -13,14 +13,12 @@
         android:id="@+id/imageView128"
         android:layout_width="411dp"
         android:layout_height="283dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="68dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.104"
         app:srcCompat="@drawable/visacard" />
-
 
     <ImageView
         android:id="@+id/backbtn"
@@ -34,33 +32,23 @@
         app:layout_constraintVertical_bias="0.666"
         app:srcCompat="@drawable/img" />
 
-    <TextView
-        android:id="@+id/textView119"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Card Holder Name"
-        android:textColor="@color/black"
+        android:background="@drawable/recangle_new"
+        android:ems="10"
+        android:inputType="text"
+        android:textColorHint="#736B6B"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView128" />
-
-    <TextView
-        android:id="@+id/textView120"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Card Number"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView119" />
 
     <EditText
         android:id="@+id/editTextDate3"
-        android:layout_width="110dp"
+        android:layout_width="130dp"
         android:layout_height="38dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/recangle_new"
@@ -69,15 +57,42 @@
         android:textAlignment="center"
         android:textColorHint="#736B6B"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.202"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView121" />
 
+    <TextView
+        android:id="@+id/textView121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Exp Date"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned" />
+
+    <TextView
+        android:id="@+id/textView122"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="CVV"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toEndOf="@+id/textView121"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned" />
+
     <EditText
         android:id="@+id/editTextNumber2"
-        android:layout_width="110dp"
+        android:layout_width="130dp"
         android:layout_height="38dp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/recangle_new"
         android:ems="10"
@@ -87,9 +102,37 @@
         app:layout_constraintStart_toEndOf="@+id/editTextDate3"
         app:layout_constraintTop_toBottomOf="@+id/textView122" />
 
+    <TextView
+        android:id="@+id/textView120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Card Number"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Card Holder Name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView128" />
+
     <EditText
         android:id="@+id/editTextNumberSigned"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/recangle_new"
@@ -97,61 +140,23 @@
         android:inputType="numberSigned"
         android:textColorHint="#736B6B"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView120" />
 
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/recangle_new"
-        android:ems="10"
-        android:inputType="text"
-        android:textColorHint="#736B6B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.124"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView119" />
-
-    <TextView
-        android:id="@+id/textView121"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Exp Date"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned" />
-
-    <TextView
-        android:id="@+id/textView122"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="CVV"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toEndOf="@+id/textView121"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned" />
-
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
         android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="Save Card"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

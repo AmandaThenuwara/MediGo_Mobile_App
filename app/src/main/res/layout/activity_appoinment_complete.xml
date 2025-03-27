@@ -12,17 +12,17 @@
         android:id="@+id/textView25"
         android:layout_width="184dp"
         android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/league_spartan"
         android:text="All Appoinment"
         android:textAlignment="center"
         android:textColor="@color/primary"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/backbtn"
@@ -39,7 +39,7 @@
     <ImageView
         android:id="@+id/imageView75"
         android:layout_width="120dp"
-        android:layout_height="22dp"
+        android:layout_height="30dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
@@ -50,7 +50,7 @@
     <ImageView
         android:id="@+id/imageView79"
         android:layout_width="120dp"
-        android:layout_height="22dp"
+        android:layout_height="30dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
@@ -61,7 +61,7 @@
     <ImageView
         android:id="@+id/imageView78"
         android:layout_width="120dp"
-        android:layout_height="22dp"
+        android:layout_height="30dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.384"
@@ -73,6 +73,7 @@
         android:id="@+id/textView91"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan"
         android:text="Upcoming"
         android:textColor="@color/primary"
         app:layout_constraintBottom_toBottomOf="@+id/imageView79"
@@ -84,6 +85,7 @@
         android:id="@+id/textView98"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan"
         android:text="Completed"
         android:textColor="@color/lightblue"
         app:layout_constraintBottom_toBottomOf="@+id/imageView75"
@@ -95,6 +97,7 @@
         android:id="@+id/textView97"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan"
         android:text="Cancelled"
         android:textColor="@color/primary"
         app:layout_constraintBottom_toBottomOf="@+id/imageView78"
@@ -159,512 +162,169 @@
         app:srcCompat="@drawable/user" />
 
     <ScrollView
-        android:layout_width="404dp"
-        android:layout_height="615dp"
+        android:layout_width="381dp"
+        android:layout_height="625dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25">
+        app:layout_constraintTop_toBottomOf="@+id/imageView79">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_width="350dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
                 app:cardBackgroundColor="@color/lightblue"
                 app:cardCornerRadius="30dp"
                 app:cardElevation="5dp">
 
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/circle_shape"
-                    android:elevation="3dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/mohomad" />
-
-                <ImageView
-                    android:id="@+id/imageView15"
-                    android:layout_width="259dp"
-                    android:layout_height="68dp"
-                    android:layout_gravity="center|right|top"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="0dp"
-                    app:srcCompat="@drawable/rectangle_white" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="44dp"
-                    android:layout_gravity="center|top|left"
-                    android:layout_marginTop="15dp"
-                    android:paddingLeft="1.1in"
-                    android:text="Prof.Mohamed Huzain"
-                    android:textColor="@color/secondary"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="371dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center|left"
-                    android:layout_marginTop="-8dp"
-                    android:paddingLeft="1.1in"
-                    android:text="Consultant Physician and Nephrologist"
-                    android:textColor="@color/secondary"
-                    android:textSize="12sp" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_box" />
-
-                <ImageView
-                    android:layout_width="19dp"
-                    android:layout_height="19dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/heart" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_box" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="19dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="55dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/star" />
-
-
-                <ImageView
-                    android:id="@+id/infobtn"
-                    android:layout_width="108dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginBottom="5dp"
-                    app:srcCompat="@drawable/rounded_button" />
-
-                <TextView
-                    android:layout_width="183dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="        Rebook"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/lightblue"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="5dp">
-
-                <ImageView
-                    android:layout_width="123dp"
-                    android:layout_height="131dp"
-                    android:layout_margin="5dp"
-                    android:background="@color/lightblue"
-                    android:elevation="3dp"
-                    android:src="@drawable/senaka" />
-
-                <ImageView
-                    android:layout_width="259dp"
-                    android:layout_height="68dp"
-                    android:layout_gravity="center|right|top"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="0dp"
-                    app:srcCompat="@drawable/rectangle_white" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="44dp"
-                    android:layout_gravity="center|top|left"
-                    android:layout_marginTop="31dp"
-                    android:paddingLeft="1.1in"
-                    android:text="Prof.Senaka Rajapaksha"
-                    android:textColor="@color/secondary"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="371dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center|left"
-                    android:layout_marginTop="2dp"
-                    android:paddingLeft="1.1in"
-                    android:text="General (Internal) Medicine"
-                    android:textColor="@color/secondary"
-                    android:textSize="12sp" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_box" />
-
-                <ImageView
-                    android:layout_width="19dp"
-                    android:layout_height="19dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/heart" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_box" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="19dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="55dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/star" />
-
-
-                <ImageView
-                    android:layout_width="108dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_button" />
-
-                <TextView
-                    android:layout_width="183dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="        Rebook"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/lightblue"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="5dp">
-
-                <ImageView
-                    android:layout_width="123dp"
-                    android:layout_height="131dp"
-                    android:layout_margin="5dp"
-                    android:background="@color/lightblue"
-                    android:elevation="3dp"
-                    android:src="@drawable/ananda" />
-
-                <ImageView
-                    android:layout_width="259dp"
-                    android:layout_height="68dp"
-                    android:layout_gravity="center|right|top"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="0dp"
-                    app:srcCompat="@drawable/rectangle_white" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="44dp"
-                    android:layout_gravity="center|top|left"
-                    android:layout_marginTop="31dp"
-                    android:paddingLeft="1.1in"
-                    android:text="Dr.Ananda Wijewikrama"
-                    android:textColor="@color/secondary"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="371dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center|left"
-                    android:layout_marginTop="2dp"
-                    android:paddingLeft="1.1in"
-                    android:text="Consultant Physician"
-                    android:textColor="@color/secondary"
-                    android:textSize="12sp" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_box" />
-
-                <ImageView
-                    android:layout_width="19dp"
-                    android:layout_height="19dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/heart" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_box" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="19dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="55dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/star" />
-
-
-                <ImageView
-                    android:layout_width="108dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_button" />
-
-                <TextView
-                    android:layout_width="183dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="        Rebook"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/lightblue"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="5dp">
-
-                <ImageView
-                    android:layout_width="123dp"
-                    android:layout_height="131dp"
-                    android:layout_margin="5dp"
-                    android:background="@color/lightblue"
-                    android:elevation="3dp"
-                    android:src="@drawable/siva" />
-
-                <ImageView
-                    android:layout_width="259dp"
-                    android:layout_height="68dp"
-                    android:layout_gravity="center|right|top"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="0dp"
-                    app:srcCompat="@drawable/rectangle_white" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="44dp"
-                    android:layout_gravity="center|top|left"
-                    android:layout_marginTop="31dp"
-                    android:paddingLeft="1.1in"
-                    android:text="Dr.Siva Chinnatamby"
-                    android:textColor="@color/secondary"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="371dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center|left"
-                    android:layout_marginTop="2dp"
-                    android:paddingLeft="1.1in"
-                    android:text="Obstetrics and Gynaecology"
-                    android:textColor="@color/secondary"
-                    android:textSize="12sp" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_box" />
-
-                <ImageView
-                    android:layout_width="19dp"
-                    android:layout_height="19dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/heart" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_box" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="19dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="55dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/star" />
-
-
-                <ImageView
-                    android:layout_width="108dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_button" />
-
-                <TextView
-                    android:layout_width="183dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="        Rebook"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                app:cardBackgroundColor="@color/lightblue"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="5dp">
-
-                <ImageView
-                    android:layout_width="123dp"
-                    android:layout_height="131dp"
-                    android:layout_margin="5dp"
-                    android:background="@color/lightblue"
-                    android:elevation="3dp"
-                    android:src="@drawable/samith" />
-
-                <ImageView
-                    android:layout_width="259dp"
-                    android:layout_height="68dp"
-                    android:layout_gravity="center|right|top"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="0dp"
-                    app:srcCompat="@drawable/rectangle_white" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="44dp"
-                    android:layout_gravity="center|top|left"
-                    android:layout_marginTop="31dp"
-                    android:paddingLeft="1.1in"
-                    android:text="Dr.Samith Perera"
-                    android:textColor="@color/secondary"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="371dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center|left"
-                    android:layout_marginTop="2dp"
-                    android:paddingLeft="1.1in"
-                    android:text="General (internal) Medicine"
-                    android:textColor="@color/secondary"
-                    android:textSize="12sp" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_box" />
-
-                <ImageView
-                    android:layout_width="19dp"
-                    android:layout_height="19dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="25dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/heart" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_box" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="19dp"
-                    android:layout_gravity="bottom|center|right"
-                    android:layout_marginRight="55dp"
-                    android:layout_marginBottom="15dp"
-                    app:srcCompat="@drawable/star" />
-
-
-                <ImageView
-                    android:layout_width="108dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/rounded_button" />
-
-                <TextView
-                    android:layout_width="183dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="        Rebook"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:foregroundGravity="center"
+                        app:cardCornerRadius="500dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView80"
+                                android:layout_width="129dp"
+                                android:layout_height="142dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/mohomad" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="202dp"
+                        android:layout_height="72dp"
+                        android:layout_gravity="center|right|top"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/rectangle_white" />
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="193dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="center|top|left"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/league_spartan"
+                        android:text="Prof.Mohamed Huzain"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/imageView15"
+                        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+                    <TextView
+                        android:layout_width="202dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/league_spartan"
+                        android:text="Consultant Physician and Nephrologist"
+                        android:textColor="#6C6C6D"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@+id/imageView15"
+                        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+                    <ImageView
+                        android:id="@+id/imageView105"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="bottom|center|right"
+                        android:layout_marginStart="12dp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView18"
+                        app:layout_constraintTop_toTopOf="@+id/imageView18"
+                        app:srcCompat="@drawable/rounded_box" />
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_gravity="bottom|center|right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView105"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/imageView105"
+                        app:layout_constraintTop_toTopOf="@+id/imageView105"
+                        app:layout_constraintVertical_bias="0.333"
+                        app:srcCompat="@drawable/heart" />
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="bottom|center|right"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/infobtn"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+                        app:srcCompat="@drawable/rounded_box" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="19dp"
+                        android:layout_gravity="bottom|center|right"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+                        app:layout_constraintStart_toStartOf="@+id/imageView18"
+                        app:layout_constraintTop_toTopOf="@+id/imageView18"
+                        app:srcCompat="@drawable/star" />
+
+                    <ImageView
+                        android:id="@+id/infobtn"
+                        android:layout_width="108dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/cardView"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+                        app:srcCompat="@drawable/rounded_button" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/league_spartan"
+                        android:text="        Rebook"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/infobtn"
+                        app:layout_constraintEnd_toEndOf="@+id/infobtn"
+                        app:layout_constraintHorizontal_bias="0.214"
+                        app:layout_constraintStart_toStartOf="@+id/infobtn"
+                        app:layout_constraintTop_toTopOf="@+id/infobtn"
+                        app:layout_constraintVertical_bias="1.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.cardview.widget.CardView>

@@ -31,18 +31,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView80"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_profile" />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView80"
+                android:layout_width="161dp"
+                android:layout_height="181dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_profile" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="Update Profile"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,8 +68,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Full Name"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,6 +84,7 @@
         android:layout_marginTop="12dp"
         android:background="@drawable/recangle_new"
         android:ems="10"
+        android:fontFamily="@font/league_spartan"
         android:hint="Amanda Thenuwara"
         android:inputType="text"
         android:textColor="@color/black"
@@ -85,8 +99,10 @@
         android:layout_width="99dp"
         android:layout_height="21dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Phone Number"
         android:textColor="@color/black"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,6 +115,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/recangle_new"
         android:ems="10"
+        android:fontFamily="@font/league_spartan"
         android:hint="0776743123"
         android:inputType="phone"
         android:textColorHint="#736B6B"
@@ -112,8 +129,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Email"
         android:textColor="@color/black"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,8 +143,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Date of Birth"
         android:textColor="@color/black"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
@@ -135,9 +156,10 @@
         android:id="@+id/editTextTextEmailAddress3"
         android:layout_width="312dp"
         android:layout_height="49dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/recangle_new"
         android:ems="10"
+        android:fontFamily="@font/league_spartan"
         android:hint="example@ex.com"
         android:inputType="textEmailAddress"
         android:textColorHint="#736B6B"
@@ -150,9 +172,10 @@
         android:id="@+id/editTextDate2"
         android:layout_width="312dp"
         android:layout_height="49dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/recangle_new"
         android:ems="10"
+        android:fontFamily="@font/league_spartan"
         android:hint="25/07/2002"
         android:inputType="date"
         android:textColorHint="#736B6B"

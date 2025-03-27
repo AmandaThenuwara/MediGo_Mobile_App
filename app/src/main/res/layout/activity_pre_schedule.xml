@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@color/ic_launcher_background"
     tools:context=".PreSchedule">
@@ -53,9 +53,9 @@
         android:id="@+id/backbtn"
         android:layout_width="21dp"
         android:layout_height="24dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView19"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img" />
@@ -64,9 +64,9 @@
         android:id="@+id/imageView9"
         android:layout_width="134dp"
         android:layout_height="27dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView19"
-        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintHorizontal_bias="0.035"
         app:layout_constraintStart_toEndOf="@+id/backbtn"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rounded_button" />
@@ -76,6 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Prof. Mohamed ..."
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/imageView9"
@@ -85,8 +86,9 @@
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="370dp"
-        android:layout_height="240dp"
+        android:layout_width="300dp"
+        android:layout_height="232dp"
+        android:layout_marginLeft="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.39"
@@ -96,36 +98,25 @@
         app:srcCompat="@drawable/recangle_new" />
 
     <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="133dp"
-        android:layout_height="101dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-        app:layout_constraintEnd_toEndOf="@+id/imageView13"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="@+id/imageView13"
-        app:layout_constraintTop_toTopOf="@+id/imageView13"
-        app:layout_constraintVertical_bias="0.064"
-        app:srcCompat="@drawable/mohomad" />
-
-    <ImageView
         android:id="@+id/imageView26"
-        android:layout_width="323dp"
-        android:layout_height="46dp"
+        android:layout_width="269dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="@+id/imageView13"
         app:layout_constraintTop_toTopOf="@+id/imageView13"
-        app:layout_constraintVertical_bias="0.618"
+        app:layout_constraintVertical_bias="0.691"
         app:srcCompat="@drawable/rectangle_white" />
 
     <ImageView
         android:id="@+id/imageView30"
         android:layout_width="98dp"
         android:layout_height="31dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintEnd_toEndOf="@+id/imageView13"
-        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="@+id/imageView13"
         app:srcCompat="@drawable/rounded_button" />
 
@@ -134,8 +125,8 @@
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_gravity="bottom|center|right"
-        android:layout_marginStart="64dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintStart_toEndOf="@+id/imageView30"
         app:srcCompat="@drawable/rounded_box" />
@@ -146,7 +137,7 @@
         android:layout_height="28dp"
         android:layout_gravity="bottom|center|right"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintStart_toEndOf="@+id/imageView14"
         app:srcCompat="@drawable/rounded_box" />
@@ -156,21 +147,22 @@
         android:layout_width="28dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center|right"
-        android:layout_marginStart="100dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="4dp"
         android:text="i"
         android:textAlignment="center"
         android:textColor="@color/primary"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-        app:layout_constraintStart_toEndOf="@+id/imageView30" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView34"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView34" />
 
     <ImageView
         android:id="@+id/imageView35"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_gravity="bottom|center|right"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintStart_toEndOf="@+id/imageView34"
         app:srcCompat="@drawable/rounded_box" />
@@ -180,8 +172,8 @@
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_gravity="bottom|center|right"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintStart_toEndOf="@+id/imageView35"
         app:srcCompat="@drawable/rounded_box" />
@@ -190,9 +182,10 @@
         android:id="@+id/textView35"
         android:layout_width="254dp"
         android:layout_height="24dp"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Prof. Mohamed Hussain Rezvi Sheriff"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView26"
         app:layout_constraintEnd_toEndOf="@+id/imageView26"
@@ -205,6 +198,7 @@
         android:id="@+id/textView36"
         android:layout_width="253dp"
         android:layout_height="19dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Consultant Physician and Nephrologis"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -218,6 +212,7 @@
         android:id="@+id/textView37"
         android:layout_width="88dp"
         android:layout_height="25dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Info"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -228,6 +223,32 @@
         app:layout_constraintTop_toTopOf="@+id/imageView30"
         app:layout_constraintVertical_bias="0.333" />
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="169dp"
+                android:layout_height="156dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mohomad" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
     <ImageView
         android:id="@+id/imageView40"
         android:layout_width="25dp"
@@ -237,7 +258,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView34"
         app:layout_constraintTop_toTopOf="@+id/imageView35"
-        app:layout_constraintVertical_bias="0.384"
+        app:layout_constraintVertical_bias="0.461"
         app:srcCompat="@drawable/star" />
 
     <ImageView
@@ -262,8 +283,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="408dp"
-        android:layout_height="307dp"
+        android:layout_width="411dp"
+        android:layout_height="321dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/rectangle_white"
         android:orientation="vertical"
@@ -272,18 +293,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView13">
 
-        <CalendarView
-            android:id="@+id/calendar"
-            android:layout_width="367dp"
-            android:layout_height="299dp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="294dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp">
+
+            <CalendarView
+                android:id="@+id/calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primary"
+                android:focusedMonthDateColor="@color/primary"
+                android:selectedWeekBackgroundColor="@color/secondary"
+                android:unfocusedMonthDateColor="@color/primary"
+                android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:weekNumberColor="@color/primary"
+                android:weekSeparatorLineColor="@color/primary" />
+        </androidx.cardview.widget.CardView>
+
+
     </LinearLayout>
 
     <Button
         android:id="@+id/schedule1"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="Next"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -297,9 +335,11 @@
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan"
         android:text="Date"
+        android:textColor="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintHorizontal_bias="0.811"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -24,8 +25,8 @@
         android:layout_height="33dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/recangle_new" />
 
@@ -53,9 +54,9 @@
         android:id="@+id/backbtn"
         android:layout_width="21dp"
         android:layout_height="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView19"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img" />
@@ -64,9 +65,9 @@
         android:id="@+id/imageView9"
         android:layout_width="134dp"
         android:layout_height="27dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView19"
-        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toEndOf="@+id/backbtn"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rounded_button" />
@@ -93,7 +94,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.092"
-        app:srcCompat="@drawable/lightblue_rectangle" />
+        app:srcCompat="@drawable/rectangle_shape" />
 
     <ImageView
         android:id="@+id/imageView53"
@@ -176,6 +177,7 @@
         android:id="@+id/textView56"
         android:layout_width="41dp"
         android:layout_height="38dp"
+        android:fontFamily="@font/league_spartan"
         android:text="22 MON"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -186,8 +188,9 @@
 
     <TextView
         android:id="@+id/textView57"
-        android:layout_width="41dp"
-        android:layout_height="38dp"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/league_spartan"
         android:text="23 TUE"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -200,6 +203,7 @@
         android:id="@+id/textView58"
         android:layout_width="41dp"
         android:layout_height="38dp"
+        android:fontFamily="@font/league_spartan"
         android:text="24 WED"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -212,6 +216,7 @@
         android:id="@+id/textView59"
         android:layout_width="41dp"
         android:layout_height="38dp"
+        android:fontFamily="@font/league_spartan"
         android:text="25 THU"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -221,8 +226,9 @@
 
     <TextView
         android:id="@+id/textView60"
-        android:layout_width="41dp"
-        android:layout_height="38dp"
+        android:layout_width="32dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/league_spartan"
         android:text="26  FRI"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -236,6 +242,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Available Time"
         android:textColor="@color/primary"
         android:textSize="16sp"
@@ -249,6 +256,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Patient Details"
         android:textColor="@color/primary"
         android:textSize="16sp"
@@ -262,6 +270,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Full Name"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -274,18 +283,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Age"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
-
-    <TextView
-        android:id="@+id/textView110"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Age"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -295,158 +293,152 @@
 
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="302dp"
-        android:layout_height="47dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/recangle_new"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.262"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView63" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/lightblue"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/secondary"
+        android:fontFamily="@font/league_spartan"
         android:text="4.00pm"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/button15"
         app:layout_constraintTop_toBottomOf="@+id/textView61" />
 
     <Button
         android:id="@+id/button18"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/lightblue"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="6.00pm"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button20"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="@color/lightblue"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/secondary"
+        android:fontFamily="@font/league_spartan"
         android:text="7.00pm"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView61" />
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/button19"
+        app:layout_constraintTop_toTopOf="@+id/button19" />
 
     <Button
         android:id="@+id/button21"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="@color/lightblue"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="7.30pm"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.974"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView61" />
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/button20"
+        app:layout_constraintTop_toTopOf="@+id/button20" />
 
     <Button
         android:id="@+id/button19"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="@color/lightblue"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="6.30pm"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.359"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView61" />
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/button18"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button15"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/lightblue"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="4.30pm"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.356"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView61" />
 
     <Button
         android:id="@+id/button16"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/lightblue"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="5.00pm"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView61" />
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
 
     <Button
         android:id="@+id/button17"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="@color/lightblue"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="5.30pm"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.971"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView46" />
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/button16"
+        app:layout_constraintTop_toTopOf="@+id/button16" />
 
     <EditText
         android:id="@+id/editTextNumber"
-        android:layout_width="242dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/recangle_new"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintHorizontal_bias="0.278"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView64" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="372dp"
+        android:layout_width="350dp"
         android:layout_height="77dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/recangle_new"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Describe your problem"
         android:inputType="textMultiLine"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintHorizontal_bias="0.278"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <Button
         android:id="@+id/button22"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="Next"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
@@ -494,7 +486,6 @@
         app:layout_constraintVertical_bias="0.64"
         app:srcCompat="@drawable/calendarwhite" />
 
-
     <ImageView
         android:id="@+id/imageView102"
         android:layout_width="41dp"
@@ -511,10 +502,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Gender"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
@@ -522,10 +514,11 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan"
         android:text="Male"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView111" />
 
@@ -534,11 +527,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Female"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toEndOf="@+id/checkBox"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Describe your problem"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

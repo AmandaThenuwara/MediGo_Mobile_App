@@ -23,6 +23,7 @@
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Your Appoiment"
         android:textAlignment="center"
         android:textColor="@color/primary"
@@ -36,8 +37,8 @@
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="382dp"
-        android:layout_height="117dp"
+        android:layout_width="361dp"
+        android:layout_height="110dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
@@ -46,28 +47,42 @@
         app:layout_constraintVertical_bias="0.114"
         app:srcCompat="@drawable/recangle_new" />
 
-    <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="85dp"
-        android:layout_height="73dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-        app:layout_constraintEnd_toEndOf="@+id/imageView13"
-        app:layout_constraintHorizontal_bias="0.023"
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="100dp"
         app:layout_constraintStart_toStartOf="@+id/imageView13"
-        app:layout_constraintTop_toTopOf="@+id/imageView13"
-        app:layout_constraintVertical_bias="0.245"
-        app:srcCompat="@drawable/mohomad" />
+        app:layout_constraintTop_toTopOf="@+id/imageView13">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="103dp"
+                android:layout_height="114dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mohomad" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
 
     <ImageView
         android:id="@+id/imageView26"
-        android:layout_width="259dp"
-        android:layout_height="42dp"
+        android:layout_width="242dp"
+        android:layout_height="43dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintEnd_toEndOf="@+id/imageView13"
-        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toStartOf="@+id/imageView13"
         app:layout_constraintTop_toTopOf="@+id/imageView13"
-        app:layout_constraintVertical_bias="0.273"
+        app:layout_constraintVertical_bias="0.194"
         app:srcCompat="@drawable/rectangle_white" />
 
     <ImageView
@@ -75,7 +90,7 @@
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_gravity="bottom|center|right"
-        android:layout_marginStart="124dp"
+        android:layout_marginStart="112dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintStart_toStartOf="@+id/imageView13"
@@ -111,8 +126,8 @@
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_gravity="bottom|center|right"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintStart_toEndOf="@+id/imageView34"
         app:srcCompat="@drawable/rounded_box" />
@@ -122,8 +137,8 @@
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_gravity="bottom|center|right"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintStart_toEndOf="@+id/imageView35"
         app:srcCompat="@drawable/rounded_box" />
@@ -132,6 +147,7 @@
         android:id="@+id/textView35"
         android:layout_width="226dp"
         android:layout_height="21dp"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Prof. Mohamed Hussain Rezvi Sheriff"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -147,9 +163,10 @@
         android:id="@+id/textView36"
         android:layout_width="240dp"
         android:layout_height="14dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Consultant Physician and Nephrologis"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="#626060"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView26"
         app:layout_constraintHorizontal_bias="0.0"
@@ -162,7 +179,7 @@
         android:layout_height="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView35"
         app:layout_constraintEnd_toEndOf="@+id/imageView35"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.991"
         app:layout_constraintStart_toEndOf="@+id/imageView34"
         app:layout_constraintTop_toTopOf="@+id/imageView35"
         app:layout_constraintVertical_bias="0.384"
@@ -206,6 +223,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/league_spartan"
         android:text="13/02/2024"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -220,6 +238,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="424dp"
+        android:fontFamily="@font/league_spartan"
         android:text="WED 5.00pm"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -257,6 +276,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Full Name"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -268,11 +288,12 @@
         android:id="@+id/textView68"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Age"
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/textView74"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView67" />
 
@@ -280,11 +301,12 @@
         android:id="@+id/textView69"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="252dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Gender"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/textView73"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView68" />
 
     <TextView
@@ -292,6 +314,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Problem"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -304,6 +327,7 @@
         android:layout_width="345dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Patient experiencing persistent kidney pain and hypertension symptoms. Requires consultation for diagnosis and possible treatment options"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -314,10 +338,11 @@
 
     <Button
         android:id="@+id/paynow"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="Next"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -330,7 +355,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="Amanda Tehnwuara"
+        android:fontFamily="@font/league_spartan"
+        android:text="Amanda Thenwuara"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.772"
@@ -342,10 +368,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Female"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView74" />
 
@@ -354,6 +381,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:fontFamily="@font/league_spartan"
         android:text="26"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -363,8 +391,8 @@
 
     <ImageView
         android:id="@+id/imageView64"
-        android:layout_width="17dp"
-        android:layout_height="20dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView62"
         app:layout_constraintEnd_toEndOf="@+id/imageView62"
         app:layout_constraintStart_toStartOf="@+id/imageView62"
@@ -373,8 +401,8 @@
 
     <ImageView
         android:id="@+id/imageView65"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView63"
         app:layout_constraintEnd_toEndOf="@+id/imageView63"
         app:layout_constraintStart_toStartOf="@+id/imageView63"

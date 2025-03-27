@@ -19,11 +19,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView80"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_profile" />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView80"
+                android:layout_width="160dp"
+                android:layout_height="168dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_profile" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -31,8 +41,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Amanda Thenuwara"
         android:textColor="@color/black"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,13 +128,28 @@
         app:srcCompat="@drawable/recangle_new" />
 
     <TextView
+        android:id="@+id/textView102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Paymen Method"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toEndOf="@+id/imageView83"
+        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+    <TextView
         android:id="@+id/textView100"
         android:layout_width="121dp"
         android:layout_height="21dp"
         android:layout_marginTop="32dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Profile"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toEndOf="@+id/imageView81"
@@ -132,87 +159,79 @@
         android:id="@+id/textView101"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Favorite"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toEndOf="@+id/imageView82"
         app:layout_constraintTop_toBottomOf="@+id/textView100" />
-
-    <TextView
-        android:id="@+id/textView102"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Paymen Method"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
-        app:layout_constraintStart_toEndOf="@+id/imageView83"
-        app:layout_constraintTop_toBottomOf="@+id/textView101" />
-
-    <TextView
-        android:id="@+id/textView103"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Privacy Policy"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toEndOf="@+id/imageView84"
-        app:layout_constraintTop_toBottomOf="@+id/textView102" />
 
     <TextView
         android:id="@+id/textView104"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Settings"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toEndOf="@+id/imageView86"
         app:layout_constraintTop_toBottomOf="@+id/textView103" />
 
     <TextView
-        android:id="@+id/textView105"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Log Out"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
-        app:layout_constraintStart_toEndOf="@+id/imageView85"
-        app:layout_constraintTop_toBottomOf="@+id/textView106" />
-
-    <TextView
         android:id="@+id/textView106"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Help"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toEndOf="@+id/imageView87"
         app:layout_constraintTop_toBottomOf="@+id/textView104" />
 
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Log Out"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toEndOf="@+id/imageView85"
+        app:layout_constraintTop_toBottomOf="@+id/textView106" />
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Privacy Policy"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toEndOf="@+id/imageView84"
+        app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
     <ImageView
         android:id="@+id/imageView88"
         android:layout_width="22dp"
         android:layout_height="29dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="222dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintHorizontal_bias="0.711"
         app:layout_constraintStart_toEndOf="@+id/textView100"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_6" />
@@ -223,7 +242,7 @@
         android:layout_height="29dp"
         android:layout_marginTop="276dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.797"
         app:layout_constraintStart_toEndOf="@+id/textView101"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_6" />
@@ -232,9 +251,9 @@
         android:id="@+id/imageView90"
         android:layout_width="22dp"
         android:layout_height="29dp"
-        android:layout_marginTop="332dp"
+        android:layout_marginTop="336dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toEndOf="@+id/textView102"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_6" />
@@ -243,9 +262,9 @@
         android:id="@+id/imageView91"
         android:layout_width="22dp"
         android:layout_height="29dp"
-        android:layout_marginTop="388dp"
+        android:layout_marginTop="392dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintHorizontal_bias="0.745"
         app:layout_constraintStart_toEndOf="@+id/textView103"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_6" />
@@ -254,9 +273,9 @@
         android:id="@+id/imageView92"
         android:layout_width="22dp"
         android:layout_height="29dp"
-        android:layout_marginTop="444dp"
+        android:layout_marginTop="452dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintHorizontal_bias="0.797"
         app:layout_constraintStart_toEndOf="@+id/textView104"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_6" />
@@ -265,7 +284,7 @@
         android:id="@+id/imageView93"
         android:layout_width="22dp"
         android:layout_height="29dp"
-        android:layout_marginTop="504dp"
+        android:layout_marginTop="512dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
         app:layout_constraintStart_toEndOf="@+id/textView106"

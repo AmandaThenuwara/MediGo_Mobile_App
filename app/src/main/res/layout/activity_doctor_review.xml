@@ -19,35 +19,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView80"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/mohomad" />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView80"
+                android:layout_width="163dp"
+                android:layout_height="159dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mohomad" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primary"
+        android:fontFamily="@font/league_spartan"
         android:text="Add Review"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
+        app:layout_constraintVertical_bias="0.169" />
 
     <TextView
         android:id="@+id/textView112"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Review"
         android:textColor="@color/primary"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,6 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:fontFamily="@font/league_spartan"
         android:text="Share Your Feedback – Help Us Improve!"
         android:textColor="@color/black"
         android:textSize="14sp"
@@ -70,6 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/league_spartan_semibold"
         android:text="Prof. Mohamed Hussain Rezvi Sheriff"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -82,6 +96,7 @@
         android:id="@+id/textView115"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan"
         android:text="Consultant Physician and Nephrologis"
         android:textColor="@color/black"
         android:textSize="14sp"
@@ -89,43 +104,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView114" />
 
-    <ImageView
-        android:id="@+id/imageView105"
-        android:layout_width="204dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
-        app:layout_constraintStart_toEndOf="@+id/imageView106"
-        app:layout_constraintTop_toBottomOf="@+id/textView115"
-        app:srcCompat="@drawable/recangle_new" />
-
-    <ImageView
-        android:id="@+id/imageView106"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView115"
-        app:srcCompat="@drawable/recangle_new" />
-
     <EditText
         android:id="@+id/editTextTextMultiLine2"
-        android:layout_width="279dp"
+        android:layout_width="269dp"
         android:layout_height="131dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/recangle_new"
         android:ems="10"
+        android:fontFamily="@font/league_spartan"
         android:gravity="start|top"
         android:hint="Enter your comment here..."
         android:inputType="textMultiLine"
         android:textColorHint="#8C8585"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView105"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
     <ImageView
         android:id="@+id/imageView107"
@@ -195,55 +188,16 @@
         app:layout_constraintVertical_bias="0.64"
         app:srcCompat="@drawable/user" />
 
-    <ImageView
-        android:id="@+id/imageView108"
-        android:layout_width="37dp"
-        android:layout_height="28dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView111"
-        app:layout_constraintTop_toTopOf="@+id/imageView105"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView109"
-        android:layout_width="37dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView105"
-        app:layout_constraintTop_toTopOf="@+id/imageView105"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView110"
-        android:layout_width="37dp"
-        android:layout_height="28dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView109"
-        app:layout_constraintTop_toTopOf="@+id/imageView105"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView111"
-        android:layout_width="37dp"
-        android:layout_height="28dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView110"
-        app:layout_constraintTop_toTopOf="@+id/imageView105"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView112"
-        android:layout_width="37dp"
-        android:layout_height="28dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView108"
-        app:layout_constraintTop_toTopOf="@+id/imageView105"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView113"
-        android:layout_width="22dp"
-        android:layout_height="17dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView106"
-        app:layout_constraintEnd_toEndOf="@+id/imageView106"
-        app:layout_constraintStart_toStartOf="@+id/imageView106"
-        app:layout_constraintTop_toTopOf="@+id/imageView106"
-        app:srcCompat="@drawable/heart" />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="269dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/recangle_new"
+        android:outlineAmbientShadowColor="#FFEB3B"
+        android:outlineSpotShadowColor="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView115" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

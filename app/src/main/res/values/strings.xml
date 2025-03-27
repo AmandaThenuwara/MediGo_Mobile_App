@@ -55,5 +55,7 @@
     <string name="pass">Password</string>
     <string name="signup_dont_have_acc">Don’t have an account? Sign Up</string>
     <string name="home_top_text">Take Care Of Your Health Needs Our Services</string>
+    <string name="doctor_title">Doctors</string>
+    <string name="info">Info</string>
 
 </resources>
